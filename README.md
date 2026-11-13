@@ -59,3 +59,10 @@ Only page views and two events are sent: `mode_start` and `session_done` with `{
 `public/sw.js` precaches the pages and hashed assets listed in `sw-manifest.json` (written after each build, which also stamps a content hash into the worker so each deploy gets its own cache). HTML is network-first, assets cache-first. It is registered only in production builds, with scope = base path.
 
 If a broken worker ever ships: edit `public/sw-kill.json` to `{ "kill": true }` and deploy. On the next visit (page load or worker update check) the worker deletes its caches and unregisters itself. Set it back to `false` afterwards.
+
+
+## Hosting on nikku.tech/deutsch/ (current)
+
+The site is served as static files inside the main website repo (`public/deutsch/`), so no DNS change is needed.
+Run `scripts/publish-to-site.sh` (tests, build with `BASE_PATH=/deutsch`, commit into a fresh worktree of the website repo), review, then push that branch to `main`.
+The GitHub Pages deploy of this repo (`/deutsch-for-japanese/`) stays as a staging copy. Umami: set `PUBLIC_UMAMI_WEBSITE_ID` when running the build.

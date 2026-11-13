@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import ModeShell from '../../components/ModeShell.astro';
+---
+<Base title="書いて練習" active="type">
+  <ModeShell title="書いて練習" lead="日本語を見て、ドイツ語を入力しましょう。大文字・小文字や、ä ö ü ß にも気をつけて。" />
+  <script>import '../../client/type.ts';</script>
+</Base>

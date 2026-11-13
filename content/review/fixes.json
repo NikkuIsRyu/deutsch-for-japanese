@@ -1,0 +1,10 @@
+{
+  "source": "Owner PDF annotations in ja_sentences_new.pdf (2026-11-13 15:30-15:40)",
+  "policy": "Rows without a mark are treated as OK (owner: 'most are good'). Fixes below replace text and reading.",
+  "fixes": [
+    {"id": "JA-S-0409", "ja": "朝ご飯は、普通は七時に食べます。", "jaReading": "あさごはんは、ふつうはしちじにたべます。", "comment": "普段は/普通は", "confirm": true},
+    {"id": "JA-S-0465", "ja": "落として、大切なお皿を欠けさせてしまいました。", "jaReading": "おとして、たいせつなおさらをかけさせてしまいました。", "comment": "欠けさせて", "confirm": false},
+    {"id": "JA-S-0513", "ja": "血管は、体中にあります。", "jaReading": "けっかんは、からだじゅうにあります。", "comment": "体中", "confirm": false},
+    {"id": "JA-S-0523", "ja": "母が病気になったので、母国へ帰りました。", "jaReading": "ははがびょうきになったので、ぼこくへかえりました。", "comment": "母国 (highlight on 国)", "confirm": true}
+  ]
+}

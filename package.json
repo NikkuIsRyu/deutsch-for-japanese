@@ -1,0 +1,21 @@
+{
+  "name": "deutsch-for-japanese",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "dev": "astro dev",
+    "build": "node scripts/build-content.mjs && astro build",
+    "preview": "astro preview",
+    "test": "node --test \"tests/**/*.test.ts\" \"tests/**/*.test.mjs\"",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.2.10"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="文一覧" active="browse">
+  <h1>文一覧</h1>
+  <p class="lead">タップすると日本語訳と読みが開きます。</p>
+  <label class="field"><span>検索（ドイツ語・日本語）</span>
+    <input id="q" type="search" lang="de" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="例：Termin / 予約" />
+  </label>
+  <div class="chips" id="level-filter" role="group" aria-label="レベル"></div>
+  <label class="field"><span>文法</span><select id="tag"></select></label>
+  <p class="muted small" id="count" aria-live="polite"></p>
+  <div id="list"></div>
+  <div class="actions center"><button type="button" class="btn" id="more" hidden>もっと見る</button></div>
+  <noscript><div class="notice">このページはJavaScriptを使います。</div></noscript>
+  <script>import '../../client/browse.ts';</script>
+</Base>

@@ -1,0 +1,129 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { withBase } from '../lib/paths.ts';
+
+interface Props {
+  title?: string;
+  active?: 'home' | 'review' | 'build' | 'type' | 'cloze' | 'browse' | 'grammar' | 'settings' | '';
+  description?: string;
+}
+const { title, active = '', description = 'ドイツ語を学ぶ日本語話者のための練習アプリ（A2〜B2）' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const u = (p = '') => withBase(base, p);
+const fullTitle = title ? `${title} | ドイツ語練習` : 'ドイツ語練習';
+const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC || 'https://cloud.umami.is/script.js';
+const prod = import.meta.env.PROD;
+
+const practice = ['build', 'type', 'cloze'];
+const topLinks = [
+  ['home', '', 'ホーム'],
+  ['review', 'review/', '復習'],
+  ['build', 'build/', '並べ替え'],
+  ['type', 'type/', '書く'],
+  ['cloze', 'cloze/', '穴埋め'],
+  ['browse', 'browse/', '文一覧'],
+  ['grammar', 'grammar/', '文法'],
+  ['settings', 'settings/', '設定'],
+] as const;
+---
+<!doctype html>
+<html lang="ja" data-base={base}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#11141c" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ドイツ語" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href={u('manifest.webmanifest')} />
+    <link rel="icon" type="image/svg+xml" href={u('icon.svg')} />
+    <link rel="apple-touch-icon" href={u('icons/apple-touch-icon.png')} />
+    <title>{fullTitle}</title>
+    {umamiId && <script is:inline defer src={umamiSrc} data-website-id={umamiId}></script>}
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href={u()}><img src={u('icon.svg')} alt="" width="26" height="26" />ドイツ語練習</a>
+        <nav class="topnav" aria-label="メインメニュー">
+          {topLinks.map(([id, path, label]) => (
+            <a href={u(path)} aria-current={active === id ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        利用状況は匿名の統計（Umami）で集計することがあります。例文や入力した答えは送信されません。学習の記録はこの端末の中だけに保存されます。<br />
+        <span lang="de">Wir zählen ggf. anonym Seitenaufrufe (Umami). Sätze und Antworten werden nie gesendet; dein Lernfortschritt bleibt auf deinem Gerät.</span>
+      </p>
+      <p>例文：Nikku 作成、日本語は友人がレビュー　·　<a href={u('grammar/')}>文法ノート</a></p>
+    </footer>
+
+    <nav class="tabbar" aria-label="タブ">
+      <a href={u()} aria-current={active === 'home' ? 'page' : undefined}><Icon name="home" />ホーム</a>
+      <a href={u('review/')} aria-current={active === 'review' ? 'page' : undefined}><Icon name="cards" />復習</a>
+      <button type="button" id="practice-toggle" aria-expanded="false" aria-controls="practice-sheet" aria-current={practice.includes(active) ? 'page' : undefined}><Icon name="pencil" />練習</button>
+      <a href={u('browse/')} aria-current={active === 'browse' ? 'page' : undefined}><Icon name="list" />文一覧</a>
+      <a href={u('settings/')} aria-current={active === 'settings' ? 'page' : undefined}><Icon name="gear" />設定</a>
+    </nav>
+    <div class="sheet" id="practice-sheet" hidden>
+      <a href={u('build/')} aria-current={active === 'build' ? 'page' : undefined}>並べ替え<small>単語を正しい順に並べます</small></a>
+      <a href={u('type/')} aria-current={active === 'type' ? 'page' : undefined}>書いて練習<small>ドイツ語を入力します</small></a>
+      <a href={u('cloze/')} aria-current={active === 'cloze' ? 'page' : undefined}>穴埋め<small>冠詞と前置詞を選びます</small></a>
+      <a href={u('grammar/')} aria-current={active === 'grammar' ? 'page' : undefined}>文法ノート<small>ポイントの解説</small></a>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script>
+      const toggle = document.getElementById('practice-toggle');
+      const sheet = document.getElementById('practice-sheet');
+      if (toggle && sheet) {
+        const close = () => { sheet.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const open = sheet.hidden;
+          sheet.hidden = !open;
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+        document.addEventListener('click', (e) => { if (!sheet.hidden && !sheet.contains(e.target as Node)) close(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+      }
+    </script>
+
+    {prod && (
+      <script is:inline define:vars={{ swUrl: u('sw.js'), killUrl: u('sw-kill.json'), scope: u() }}>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', async () => {
+            try {
+              const r = await fetch(killUrl, { cache: 'no-store' });
+              const j = r.ok ? await r.json() : null;
+              if (j && j.kill === true) {
+                const regs = await navigator.serviceWorker.getRegistrations();
+                await Promise.all(regs.map((x) => x.unregister()));
+                if (window.caches) {
+                  const keys = await caches.keys();
+                  await Promise.all(keys.filter((k) => k.startsWith('dfj-')).map((k) => caches.delete(k)));
+                }
+                return;
+              }
+            } catch (e) { /* offline: fine, keep the current worker */ }
+            navigator.serviceWorker.register(swUrl, { scope }).catch(() => {});
+          });
+        }
+      </script>
+    )}
+  </body>
+</html>

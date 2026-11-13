@@ -1,0 +1,23 @@
+Deutsch für Japanischsprachige - Entwürfe B1/B2 (Batch 1)
+
+Datei: b1b2_batch1.csv (UTF-8, in Excel / LibreOffice / Google Sheets öffnen)
+Das sind Entwürfe. Sie sind NICHT veröffentlicht und müssen erst geprüft werden.
+
+Aufgabe für jede Zeile:
+1. Lies den deutschen Satz (de) und die japanische Übersetzung (ja).
+2. Trage in der Spalte "verdict" ein:
+   OK   = Satz ist in Ordnung, nichts zu ändern.
+   FIX  = Satz ist verbesserungswürdig. Schreibe die korrigierte Fassung in "correction"
+          (bei Fehlern im Deutschen: den deutschen Satz; bei Fehlern im Japanischen: den
+          japanischen Satz) und nenne kurz den Grund in "comment".
+   DROP = Satz ist unnatürlich, unpassend oder falsch und sollte gestrichen werden.
+3. Spalte "comment" ist für Anmerkungen (optional bei OK).
+
+Deutsche Prüfer: Ist der deutsche Satz grammatisch korrekt und klingt er natürlich?
+Passt die Grammatik zu den genannten Tags (Spalte "tags")?
+
+Japanische Prüfer: Ist die japanische Übersetzung natürlich, so wie ein Muttersprachler
+sie schreiben würde? Stimmt die Bedeutung mit dem deutschen Satz überein? Ist die
+Lesung (ja_reading, nur Hiragana) richtig?
+
+Bitte ändert die Spalten draft_id bis note nicht. Danke!

@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/paths.ts';
+const u = (p = '') => withBase(import.meta.env.BASE_URL, p);
+const modes = [
+  ['review/', '復習', '日本語を見て、ドイツ語を思い出します。間隔をあけて自動で出題します。'],
+  ['build/', '並べ替え', 'ばらばらの単語を、正しい順にタップして並べます。'],
+  ['type/', '書いて練習', 'ドイツ語を入力します。ウムラウトのボタンつき。'],
+  ['cloze/', '穴埋め', '冠詞や前置詞を4択で選びます。'],
+  ['browse/', '文一覧', '例文を検索したり、レベルや文法で絞り込めます。'],
+  ['grammar/', '文法ノート', '文法のポイントを日本語で確認できます。'],
+] as const;
+---
+<Base title="" active="home">
+  <h1>ドイツ語練習</h1>
+  <p class="lead"><span lang="de">Deutsch üben – für Freundinnen und Freunde aus Japan.</span></p>
+
+  <div class="notice" id="ios-hint" hidden>
+    iPhoneでは、Safariの「共有」ボタン →「ホーム画面に追加」で、アプリのように使えます。
+  </div>
+
+  <section class="card" aria-labelledby="today">
+    <h2 id="today">今日の学習</h2>
+    <div class="stats">
+      <div class="stat"><b id="stat-due">–</b><span>復習</span></div>
+      <div class="stat"><b id="stat-new">–</b><span>新しい文</span></div>
+      <div class="stat"><b id="stat-streak">–</b><span>連続日数</span></div>
+    </div>
+    <p class="muted small" style="margin:10px 0 0">覚えた文：<span id="stat-learned">–</span></p>
+    <div class="actions"><a class="btn primary block" id="go-review" href={u('review/')}>復習を始める</a></div>
+  </section>
+
+  <section class="card" id="levels" aria-labelledby="lv">
+    <h2 id="lv">レベル</h2>
+    <p class="muted small" style="margin-top:0">練習する文のレベルを選びます（複数選べます）。</p>
+    <div class="chips" id="level-chips" role="group" aria-label="レベル"></div>
+  </section>
+
+  <section id="modes" aria-labelledby="md">
+    <h2 id="md">練習のしかた</h2>
+    <div class="grid">
+      {modes.map(([path, name, text]) => (
+        <a class="mode" href={u(path)}><strong>{name}</strong><span>{text}</span></a>
+      ))}
+    </div>
+  </section>
+
+  <p class="notice">例文と文法ノートは、いま確認中の下書きです。気になる点があれば教えてください。</p>
+
+  <script>import '../client/home.ts';</script>
+</Base>

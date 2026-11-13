@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="設定" active="settings">
+  <h1>設定</h1>
+  <div class="notice bad" id="storage-warning" hidden>この端末（ブラウザ）では記録を保存できません。プライベートブラウズを使っていませんか？ このままでも使えますが、閉じると記録が消えます。</div>
+
+  <section class="card">
+    <h2>学習</h2>
+    <label class="field"><span>1日の新しい文の数</span>
+      <input id="new-per-day" type="number" inputmode="numeric" min="0" max="100" step="1" />
+    </label>
+    <div class="check"><input id="show-reading" type="checkbox" /><label for="show-reading">日本語の読み（ひらがな）を表示する</label></div>
+  </section>
+
+  <section class="card">
+    <h2>音声</h2>
+    <label class="field"><span>読み上げの速さ：<output id="rate-out">0.90</output></span>
+      <input id="rate" type="range" min="0.7" max="1.1" step="0.05" />
+    </label>
+    <div class="actions"><button type="button" class="btn small" id="rate-test">試し聞き</button></div>
+    <p class="muted small">端末に入っているドイツ語の音声を使います。聞こえないときは、端末の設定でドイツ語の音声を追加してください。</p>
+  </section>
+
+  <section class="card">
+    <h2>バックアップ（書き出し）</h2>
+    <p class="muted small" style="margin-top:0">学習の記録はこの端末の中だけにあります。機種変更の前などに、コードをコピーして保存しておきましょう。</p>
+    <label class="field"><span class="sr-only">書き出しコード</span><textarea id="export-code" readonly rows="4" spellcheck="false"></textarea></label>
+    <div class="actions"><button type="button" class="btn small" id="copy">コピー</button><button type="button" class="btn small" id="download">ファイルで保存</button></div>
+  </section>
+
+  <section class="card">
+    <h2>読み込み</h2>
+    <label class="field"><span>コードを貼り付け</span><textarea id="import-code" rows="4" spellcheck="false" placeholder='{"schema":1,…'></textarea></label>
+    <div class="actions"><button type="button" class="btn small primary" id="import-btn">読み込む</button></div>
+    <label class="field"><span>またはファイルを選ぶ</span><input id="import-file" type="file" accept="application/json,.json" /></label>
+    <div id="import-msg" class="notice" hidden role="status"></div>
+  </section>
+
+  <section class="card">
+    <h2>記録を削除</h2>
+    <div id="reset-1"><button type="button" class="btn danger small" id="reset-start">すべての記録を削除…</button></div>
+    <div id="reset-2" hidden>
+      <p><strong>学習の記録と設定がすべて消えます。</strong>先にバックアップを取ることをおすすめします。</p>
+      <div class="actions"><button type="button" class="btn danger small" id="reset-go">完全に削除する</button><button type="button" class="btn small" id="reset-cancel">やめる</button></div>
+    </div>
+  </section>
+
+  <script>import '../../client/settings.ts';</script>
+</Base>

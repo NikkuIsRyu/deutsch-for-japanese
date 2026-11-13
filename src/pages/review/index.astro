@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import ModeShell from '../../components/ModeShell.astro';
+---
+<Base title="復習" active="review">
+  <ModeShell title="復習" lead="日本語を見て、ドイツ語を思い出しましょう。答えを見たあと、どのくらい覚えていたかを選びます。" />
+  <script>import '../../client/review.ts';</script>
+</Base>

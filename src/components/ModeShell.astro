@@ -1,0 +1,9 @@
+---
+interface Props { title: string; lead: string; }
+const { title, lead } = Astro.props;
+---
+<h1>{title}</h1>
+<p class="lead">{lead}</p>
+<p class="muted small" id="levels-note"></p>
+<div id="stage" aria-live="polite"><p class="muted">読み込み中…</p></div>
+<noscript><div class="notice">このアプリはJavaScriptを使います。ブラウザの設定で有効にしてください。</div></noscript>

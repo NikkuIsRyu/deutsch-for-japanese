@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "status": "draft",
+  "tags": [
+    {
+      "id": "perfekt",
+      "cefr": "A2",
+      "titleDe": "Perfekt",
+      "titleJa": "現在完了",
+      "summaryJa": "話し言葉で過去のことを言うときは、ふつう現在完了を使います。haben または sein の定動詞を2番目に置き、過去分詞を文末に置きます。多くの動詞は haben を使いますが、移動や状態の変化を表す動詞は sein を使います。",
+      "points": [
+        {
+          "ja": "ほとんどの動詞は haben + 過去分詞です。過去分詞は文末に来ます。",
+          "exampleDe": "Gestern habe ich einen Brief geschrieben.",
+          "exampleJa": "昨日、私は手紙を書きました。"
+        },
+        {
+          "ja": "gehen、fahren、kommen など移動を表す動詞や、状態の変化を表す動詞は sein を使います。",
+          "exampleDe": "Wir sind letztes Jahr nach Wien gefahren.",
+          "exampleJa": "私たちは去年ウィーンへ行きました。"
+        },
+        {
+          "ja": "規則動詞は ge-…-t、不規則動詞は ge-…-en の形になります。分離動詞は ge が前つづりと語幹の間に入ります。",
+          "exampleDe": "Er hat den Kurs schon angefangen.",
+          "exampleJa": "彼はもうそのコースを始めました。"
+        }
+      ],
+      "pitfallJa": "日本語は「書きました」のように動詞が1語で過去になるため、過去分詞を文末に置き忘れたり、haben と sein を取り違えたりしがちです。移動・変化の動詞は sein、と動詞ごとに覚えましょう。"
+    },
+    {
+      "id": "praeteritum",
+      "cefr": "A2",
+      "titleDe": "Präteritum (war/hatte/Modalverben)",
+      "titleJa": "過去形（war・hatte・話法の助動詞）",
+      "summaryJa": "書き言葉や物語では過去形を使いますが、話し言葉では sein、haben、話法の助動詞だけが過去形でよく使われます。それ以外の動詞は、会話では現在完了を使うのが自然です。人称によって語尾が変わる点にも注意しましょう。",
+      "points": [
+        {
+          "ja": "sein の過去形は war、haben の過去形は hatte です。会話でもよく使います。",
+          "exampleDe": "Gestern war ich müde, denn ich hatte wenig geschlafen.",
+          "exampleJa": "昨日は疲れていました。あまり寝ていなかったからです。"
+        },
+        {
+          "ja": "話法の助動詞の過去形は、ウムラウトが取れて -te がつきます（konnte, musste, wollte）。",
+          "exampleDe": "Als Kind konnte ich nicht schwimmen.",
+          "exampleJa": "子どものころ、私は泳げませんでした。"
+        },
+        {
+          "ja": "ich と er/sie/es では、過去形の形が同じになります。",
+          "exampleDe": "Er musste gestern länger arbeiten.",
+          "exampleJa": "彼は昨日、残業しなければなりませんでした。"
+        }
+      ],
+      "pitfallJa": "「でした」「ました」と日本語の過去は一律なので、どの動詞も過去形にしてしまい、会話で不自然な固い表現になることがあります。会話では war・hatte・話法の助動詞以外は現在完了が基本です。"
+    },
+    {
+      "id": "modalverben",
+      "cefr": "A2",
+      "titleDe": "Modalverben",
+      "titleJa": "話法の助動詞",
+      "summaryJa": "können、müssen、dürfen、sollen、wollen、möchten、mögen は、別の動詞と一緒に使って「できる」「しなければならない」などの意味を加えます。話法の助動詞が定動詞として2番目に来て、本動詞は不定詞の形で文末に置かれます。単数では ich と er/sie/es の形が同じで、語尾がつきません。",
+      "points": [
+        {
+          "ja": "話法の助動詞は2番目、本動詞の不定詞は文末です。",
+          "exampleDe": "Ich muss heute früh aufstehen.",
+          "exampleJa": "今日は早く起きなければなりません。"
+        },
+        {
+          "ja": "dürfen は「許可」、können は「能力・可能性」、sollen は「他人からの要求」を表します。",
+          "exampleDe": "Hier darf man nicht rauchen.",
+          "exampleJa": "ここでは喫煙してはいけません。"
+        },
+        {
+          "ja": "möchten は丁寧な希望を表し、買い物やレストランでよく使います。",
+          "exampleDe": "Ich möchte einen Tisch für zwei Personen reservieren.",
+          "exampleJa": "2名でテーブルを予約したいのですが。"
+        }
+      ],
+      "pitfallJa": "ich kann や er kann に語尾 -e/-t をつけてしまう誤りがよくあります。また、müssen nicht は「しなくてよい」で、「してはいけない」は nicht dürfen です。この違いは日本語の感覚と少しずれるので注意しましょう。"
+    },
+    {
+      "id": "trennbare_verben",
+      "cefr": "A2",
+      "titleDe": "Trennbare Verben",
+      "titleJa": "分離動詞",
+      "summaryJa": "an-、auf-、aus-、ein-、mit-、zurück- などの前つづりがついた動詞は、主文では前つづりが分かれて文末に置かれます。定動詞は2番目に来ます。不定詞や副文では、前つづりと動詞が一語としてつながります。",
+      "points": [
+        {
+          "ja": "主文では、動詞が2番目、前つづりが文末です。",
+          "exampleDe": "Der Zug kommt um acht Uhr an.",
+          "exampleJa": "電車は8時に到着します。"
+        },
+        {
+          "ja": "話法の助動詞と一緒に使うと、分離動詞は不定詞のまま一語で文末に来ます。",
+          "exampleDe": "Ich muss noch das Fenster zumachen.",
+          "exampleJa": "まだ窓を閉めなければなりません。"
+        },
+        {
+          "ja": "現在完了では、前つづりと過去分詞の間に ge が入ります。",
+          "exampleDe": "Sie hat mich gestern angerufen.",
+          "exampleJa": "彼女は昨日、私に電話をくれました。"
+        }
+      ],
+      "pitfallJa": "日本語では「電話をかける」のように動詞が最後に来るので、前つづりを動詞にくっつけたまま Ich anrufe dich. としてしまう誤りが多く見られます。主文では前つづりを文末へ、と意識しましょう。"
+    },
+    {
+      "id": "dativ",
+      "cefr": "A2",
+      "titleDe": "Dativ",
+      "titleJa": "与格（3格）",
+      "summaryJa": "与格は、主に「〜に」にあたる間接目的語を表します。冠詞は男性・中性で dem、女性で der、複数で den（名詞に -n がつく）になります。helfen、gefallen、gehören など与格だけを取る動詞や、mit、bei、nach などの前置詞の後でも使います。",
+      "points": [
+        {
+          "ja": "geben や schenken では、人が与格、物が対格です。",
+          "exampleDe": "Ich schenke meiner Mutter einen Blumenstrauß.",
+          "exampleJa": "私は母に花束をプレゼントします。"
+        },
+        {
+          "ja": "helfen、gefallen、gehören などは、目的語が必ず与格になります。",
+          "exampleDe": "Kannst du mir bitte helfen?",
+          "exampleJa": "手伝ってもらえますか。"
+        },
+        {
+          "ja": "mit、bei、von、zu、nach、aus、seit は常に与格を取ります。",
+          "exampleDe": "Ich fahre mit dem Bus zur Arbeit.",
+          "exampleJa": "私はバスで通勤しています。"
+        }
+      ],
+      "pitfallJa": "日本語の助詞「を」「に」をそのまま対格・与格に当てはめると間違います。たとえば「手伝う」は日本語では「を」ですが、helfen は与格です。動詞ごとに格を覚えましょう。"
+    },
+    {
+      "id": "wechselpraepositionen",
+      "cefr": "A2",
+      "titleDe": "Wechselpräpositionen",
+      "titleJa": "3・4格支配の前置詞",
+      "summaryJa": "in、an、auf、über、unter、vor、hinter、neben、zwischen は、場所の「いる位置」を表すときは与格、方向への「移動」を表すときは対格を取ります。つまり wo（どこで）なら与格、wohin（どこへ）なら対格です。",
+      "points": [
+        {
+          "ja": "位置（wo?）には与格を使います。",
+          "exampleDe": "Das Buch liegt auf dem Tisch.",
+          "exampleJa": "本はテーブルの上にあります。"
+        },
+        {
+          "ja": "方向（wohin?）には対格を使います。",
+          "exampleDe": "Ich lege das Buch auf den Tisch.",
+          "exampleJa": "私は本をテーブルの上に置きます。"
+        },
+        {
+          "ja": "同じ前置詞でも、動詞によって格が変わります。stehen / stellen、sitzen / sich setzen のペアで覚えましょう。",
+          "exampleDe": "Er geht ins Kino, aber seine Frau bleibt im Büro.",
+          "exampleJa": "彼は映画館へ行きますが、奥さんはオフィスに残ります。"
+        }
+      ],
+      "pitfallJa": "日本語では「〜に」が位置にも方向にも使えるため、「どこに」だけでは格が決まりません。位置か移動かを区別する習慣をつけましょう。また、冠詞を落としてしまわないよう注意が必要です。"
+    },
+    {
+      "id": "adjektivendungen",
+      "cefr": "A2",
+      "titleDe": "Adjektivendungen",
+      "titleJa": "形容詞の語尾変化",
+      "summaryJa": "形容詞が名詞の前に置かれるときは、性・数・格に応じて語尾がつきます。冠詞がある場合は、冠詞が性・格をすでに示しているかどうかで、語尾が -e か -en になることが多いです。述語として使う場合（Das Haus ist groß.）は語尾がつきません。",
+      "points": [
+        {
+          "ja": "定冠詞の後では、1格の単数と、女性・中性の4格が -e、それ以外はほぼ -en です。",
+          "exampleDe": "Der neue Kollege kommt aus Spanien.",
+          "exampleJa": "新しい同僚はスペイン出身です。"
+        },
+        {
+          "ja": "不定冠詞の後では、男性1格は -er、中性1・4格は -es になります。",
+          "exampleDe": "Das ist ein interessantes Buch.",
+          "exampleJa": "これは面白い本です。"
+        },
+        {
+          "ja": "冠詞がないときは、形容詞が冠詞の語尾を代わりに示します。",
+          "exampleDe": "Ich trinke gern kalten Tee.",
+          "exampleJa": "私は冷たいお茶が好きです。"
+        }
+      ],
+      "pitfallJa": "日本語の形容詞は名詞の前でも「大きい家」のように性・格で変わらないため、語尾をつけ忘れたり、全部 -e にしたりしがちです。まずは「冠詞が語尾を示しているか」を見る習慣をつけましょう。"
+    },
+    {
+      "id": "reflexive_verben",
+      "cefr": "A2",
+      "titleDe": "Reflexive Verben",
+      "titleJa": "再帰動詞",
+      "summaryJa": "sich を伴う動詞を再帰動詞と呼びます。sich freuen や sich treffen のように、動作が主語自身に向かう形です。再帰代名詞は人称で変わり（mich, dich, sich, uns, euch, sich）、日本語にはない形なので動詞ごとに覚えます。",
+      "points": [
+        {
+          "ja": "再帰代名詞は主語に合わせて変わります。",
+          "exampleDe": "Ich interessiere mich für Geschichte.",
+          "exampleJa": "私は歴史に興味があります。"
+        },
+        {
+          "ja": "sich treffen や sich unterhalten のように、「お互いに」の意味になる動詞もあります。",
+          "exampleDe": "Wir treffen uns morgen um sieben vor dem Bahnhof.",
+          "exampleJa": "私たちは明日7時に駅前で会います。"
+        },
+        {
+          "ja": "体の部位や持ち物が目的語になるときは、再帰代名詞が与格になります。",
+          "exampleDe": "Ich putze mir jeden Abend die Zähne.",
+          "exampleJa": "私は毎晩歯を磨きます。"
+        }
+      ],
+      "pitfallJa": "日本語では「喜ぶ」「興味がある」に再帰の形はないため、sich を抜かして Ich freue auf das Wochenende. と言ってしまいがちです。また、前置詞（sich freuen auf / über）も一緒に覚えましょう。"
+    },
+    {
+      "id": "komparativ",
+      "cefr": "A2",
+      "titleDe": "Komparativ/Superlativ",
+      "titleJa": "比較級・最上級",
+      "summaryJa": "比較級は形容詞に -er、最上級は am …-sten をつけます。短い形容詞はウムラウトがつくことが多く（alt - älter - am ältesten）、gut - besser - am besten など不規則な形もあります。比較の対象は als で、同じ程度は so … wie で表します。",
+      "points": [
+        {
+          "ja": "比較級 + als で「〜より…」を表します。",
+          "exampleDe": "Mein Bruder ist größer als ich.",
+          "exampleJa": "兄は私より背が高いです。"
+        },
+        {
+          "ja": "同じ程度は so … wie、最上級は am …-sten で表します。",
+          "exampleDe": "Im Sommer ist es hier am schönsten.",
+          "exampleJa": "ここは夏がいちばんきれいです。"
+        },
+        {
+          "ja": "gern - lieber - am liebsten は、好みの度合いを表す特別な形です。",
+          "exampleDe": "Ich trinke lieber Tee als Kaffee.",
+          "exampleJa": "私はコーヒーよりお茶のほうが好きです。"
+        }
+      ],
+      "pitfallJa": "日本語の「より」に引きずられて、比較の対象に als ではなく wie を使ってしまう誤りがあります。比較級には als、同等には wie と覚えましょう。「いちばん」も、名詞の前では der größte のように語尾が必要です。"
+    },
+    {
+      "id": "imperativ",
+      "cefr": "A2",
+      "titleDe": "Imperativ",
+      "titleJa": "命令形",
+      "summaryJa": "命令形は du、ihr、Sie のどれに話しかけるかで形が変わります。du では語幹だけ（Komm!）、ihr では ihr の形のまま（Kommt!）、Sie では動詞を先頭に置いて Sie を残します（Kommen Sie!）。bitte をつけると丁寧になります。",
+      "points": [
+        {
+          "ja": "du に対する命令は語幹だけです。e → i に変わる動詞は注意します（nimm, sprich）。",
+          "exampleDe": "Nimm bitte einen Schirm mit, es regnet.",
+          "exampleJa": "雨が降っているから、傘を持っていってね。"
+        },
+        {
+          "ja": "Sie に対する命令は、動詞を文頭に置き、Sie を後ろに残します。",
+          "exampleDe": "Setzen Sie sich bitte hierher.",
+          "exampleJa": "こちらにお座りください。"
+        },
+        {
+          "ja": "分離動詞では、前つづりが文末に来ます。",
+          "exampleDe": "Mach bitte das Licht aus!",
+          "exampleJa": "電気を消してね。"
+        }
+      ],
+      "pitfallJa": "日本語では「〜てください」で丁寧にも親しくも言えますが、ドイツ語は du / ihr / Sie で形が変わります。目上の人や初対面の人には Sie を使うこと、また bitte だけで丁寧になるとは限らないことに注意しましょう。"
+    },
+    {
+      "id": "nebensatz_weil_dass_wenn",
+      "cefr": "A2",
+      "titleDe": "Nebensätze mit weil/dass/wenn/ob",
+      "titleJa": "weil・dass・wenn・ob の副文",
+      "summaryJa": "weil（なぜなら）、dass（〜ということ）、wenn（もし〜なら）、ob（〜かどうか）で始まる文は副文で、定動詞が文末に来ます。副文が先に来る場合は、主文の定動詞が副文の直後に来ます。コンマで区切る点も日本語と異なります。",
+      "points": [
+        {
+          "ja": "weil の副文では、定動詞が文末に置かれます。",
+          "exampleDe": "Ich bleibe heute zu Hause, weil ich krank bin.",
+          "exampleJa": "病気なので、今日は家にいます。"
+        },
+        {
+          "ja": "副文を文頭に置くと、主文は動詞から始まります。",
+          "exampleDe": "Wenn es morgen regnet, bleiben wir zu Hause.",
+          "exampleJa": "明日雨が降ったら、私たちは家にいます。"
+        },
+        {
+          "ja": "ob は「〜かどうか」で、疑問詞のない間接疑問に使います。",
+          "exampleDe": "Ich weiß nicht, ob er heute kommt.",
+          "exampleJa": "彼が今日来るかどうか、私は知りません。"
+        }
+      ],
+      "pitfallJa": "日本語は動詞が常に文末なので、副文の語順は得意に思えますが、実際には主文で weil の後に主文と同じ語順（weil ich bin krank）を使ってしまう誤りが多く見られます。副文では動詞は最後です。dass と das の綴りの違いにも注意しましょう。"
+    },
+    {
+      "id": "relativsatz",
+      "cefr": "B1",
+      "titleDe": "Relativsätze",
+      "titleJa": "関係文",
+      "summaryJa": "関係文は名詞を後ろから説明する副文です。関係代名詞の性・数は先行詞に、格は関係文の中での役割に合わせます。定動詞は文末に置き、主文との間はコンマで区切ります。日本語の連体修飾（名詞の前に置く）とは語順が逆になります。",
+      "points": [
+        {
+          "ja": "関係代名詞の性・数は先行詞で決まり、格は関係文の中の役割で決まります。",
+          "exampleDe": "Der Mann, der neben mir wohnt, arbeitet als Arzt.",
+          "exampleJa": "私の隣に住んでいる男性は医師として働いています。"
+        },
+        {
+          "ja": "前置詞が必要なときは、前置詞を関係代名詞の前に置きます。",
+          "exampleDe": "Das ist die Firma, in der ich arbeite.",
+          "exampleJa": "ここが私の働いている会社です。"
+        },
+        {
+          "ja": "対格の関係代名詞は男性のみ den で、それ以外は1格と同じ形です。",
+          "exampleDe": "Der Film, den wir gestern gesehen haben, war spannend.",
+          "exampleJa": "私たちが昨日見た映画はおもしろかったです。"
+        }
+      ],
+      "pitfallJa": "日本語では「私が昨日見た映画」のように説明が名詞の前に来ますが、ドイツ語では名詞の後に関係文を置きます。語順を日本語のまま組み立てないようにしましょう。コンマの省略と、関係代名詞を省略する癖にも注意が必要です。"
+    },
+    {
+      "id": "konjunktiv2",
+      "cefr": "B1",
+      "titleDe": "Konjunktiv II",
+      "titleJa": "接続法第2式",
+      "summaryJa": "接続法第2式は、非現実の仮定、丁寧な依頼、控えめな助言などを表します。多くの動詞は würde + 不定詞で作り、sein、haben、話法の助動詞は hätte、wäre、könnte、sollte などの専用の形をよく使います。",
+      "points": [
+        {
+          "ja": "丁寧な依頼や控えめな言い方には、könnte、würde を使います。",
+          "exampleDe": "Könnten Sie mir bitte den Weg zum Bahnhof zeigen?",
+          "exampleJa": "駅までの道を教えていただけませんか。"
+        },
+        {
+          "ja": "wenn を使った非現実の仮定では、副文も主文も接続法第2式です。",
+          "exampleDe": "Wenn ich mehr Zeit hätte, würde ich öfter ins Fitnessstudio gehen.",
+          "exampleJa": "もっと時間があれば、もっとジムに通うのですが。"
+        },
+        {
+          "ja": "助言には sollte や an deiner Stelle を使います。",
+          "exampleDe": "An deiner Stelle würde ich den Arzt anrufen.",
+          "exampleJa": "私があなたなら、医者に電話しますよ。"
+        }
+      ],
+      "pitfallJa": "日本語の敬語（「〜していただけますか」）は、ドイツ語では Konjunktiv II で表すのが近い表現ですが、対応は完全ではありません。Sie と Konjunktiv II を組み合わせれば丁寧ですが、使いすぎると不自然になります。また、wenn 節で würde を重ねる誤りにも注意が必要です。"
+    },
+    {
+      "id": "passiv",
+      "cefr": "B1",
+      "titleDe": "Passiv",
+      "titleJa": "受動態",
+      "summaryJa": "ドイツ語の受動態（動作受動）は werden + 過去分詞で作ります。行為者より行為そのものに注目したいときに使います。行為者を言うときは von + 与格、手段・原因には durch + 対格を使います。",
+      "points": [
+        {
+          "ja": "現在形の受動態は werden + 過去分詞（文末）です。",
+          "exampleDe": "Das Paket wird morgen geliefert.",
+          "exampleJa": "荷物は明日配達されます。"
+        },
+        {
+          "ja": "過去の受動態は wurde + 過去分詞、完了では worden を使います。",
+          "exampleDe": "Die Brücke wurde im Jahr 1990 gebaut.",
+          "exampleJa": "その橋は1990年に建設されました。"
+        },
+        {
+          "ja": "行為者は von で示します。",
+          "exampleDe": "Der Text wurde von einem Übersetzer überprüft.",
+          "exampleJa": "その文章は翻訳者によって確認されました。"
+        }
+      ],
+      "pitfallJa": "日本語の「迷惑の受身」（雨に降られた、など）や「〜される」に当たる表現がそのまま使えるわけではありません。ドイツ語では自動詞の受動態は主語のない形（Es wird getanzt. など）になります。また werden と sein（状態）を混同しないようにしましょう。"
+    },
+    {
+      "id": "infinitiv_zu",
+      "cefr": "B1",
+      "titleDe": "Infinitiv mit zu, um…zu",
+      "titleJa": "zu 不定詞・um…zu",
+      "summaryJa": "zu 不定詞句は、動詞や形容詞、名詞を補う働きをします。不定詞は文末に置かれ、分離動詞では前つづりと動詞の間に zu が入ります。目的を表すときは um … zu を使い、「〜するために」の意味になります。",
+      "points": [
+        {
+          "ja": "多くの動詞や表現の後で、zu + 不定詞を使います。",
+          "exampleDe": "Ich habe vergessen, das Fenster zu schließen.",
+          "exampleJa": "窓を閉めるのを忘れてしまいました。"
+        },
+        {
+          "ja": "目的は um … zu で表します。主文と副文の主語が同じときに使えます。",
+          "exampleDe": "Er fährt nach Berlin, um dort einen Sprachkurs zu besuchen.",
+          "exampleJa": "彼は語学コースに通うためにベルリンへ行きます。"
+        },
+        {
+          "ja": "分離動詞では、前つづりと動詞の間に zu を入れて一語にします。",
+          "exampleDe": "Es ist wichtig, pünktlich anzukommen.",
+          "exampleJa": "時間どおりに着くことが大切です。"
+        }
+      ],
+      "pitfallJa": "日本語の「〜するために」は主語が変わっても使えますが、um … zu は主語が同じときに限られます。主語が違うときは damit を使います。また、話法の助動詞や werden の後では zu を入れません。"
+    },
+    {
+      "id": "temporalsatz",
+      "cefr": "B1",
+      "titleDe": "als/während/bevor/nachdem/seit/bis",
+      "titleJa": "時を表す副文",
+      "summaryJa": "als、während、bevor、nachdem、seit、bis などで始まる副文は、出来事の時間関係を表します。副文なので定動詞は文末です。als は過去の一回の出来事、wenn は繰り返しや現在・未来に使います。nachdem では主文より前の時制を使います。",
+      "points": [
+        {
+          "ja": "過去の一度きりの出来事には als を使います。",
+          "exampleDe": "Als ich in Japan gewohnt habe, habe ich viel Reis gegessen.",
+          "exampleJa": "日本に住んでいたとき、私はお米をたくさん食べました。"
+        },
+        {
+          "ja": "nachdem の副文は、主文より一段階前の時制にします（完了形と過去形、など）。",
+          "exampleDe": "Nachdem er gegessen hatte, ging er spazieren.",
+          "exampleJa": "食事を終えてから、彼は散歩に出かけました。"
+        },
+        {
+          "ja": "seit は「〜して以来、〜から」、bis は「〜まで」の意味です。",
+          "exampleDe": "Ich warte, bis der Bus kommt.",
+          "exampleJa": "バスが来るまで待ちます。"
+        }
+      ],
+      "pitfallJa": "日本語は「とき」「たら」「ながら」で時間関係をまとめて表せるため、als と wenn の使い分けが難しく感じられます。一回きりの過去は als、繰り返しや現在・未来は wenn と整理しましょう。"
+    },
+    {
+      "id": "konzessiv_final",
+      "cefr": "B1",
+      "titleDe": "obwohl/damit/trotzdem/deshalb",
+      "titleJa": "譲歩・目的・結果の接続詞",
+      "summaryJa": "obwohl（〜なのに）と damit（〜するために）は副文を作り、定動詞は文末に来ます。一方、trotzdem（それなのに）と deshalb（だから）は副詞なので、主文の中で定動詞の直前に置かれ、動詞が2番目に来ます。この違いが語順のポイントです。",
+      "points": [
+        {
+          "ja": "obwohl は副文で、定動詞は文末です。",
+          "exampleDe": "Obwohl es regnet, gehen wir spazieren.",
+          "exampleJa": "雨が降っているのに、私たちは散歩に行きます。"
+        },
+        {
+          "ja": "trotzdem と deshalb は副詞で、直後に定動詞が来ます。",
+          "exampleDe": "Er ist krank. Trotzdem geht er zur Arbeit.",
+          "exampleJa": "彼は病気です。それでも仕事に行きます。"
+        },
+        {
+          "ja": "damit は目的を表す副文で、主語が変わるときにも使えます。",
+          "exampleDe": "Ich schreibe es auf, damit du es nicht vergisst.",
+          "exampleJa": "あなたが忘れないように、書いておきます。"
+        }
+      ],
+      "pitfallJa": "日本語では「だから」「それなのに」も「ので」「のに」も同じように文末に動詞が来るため、deshalb や trotzdem の後でも動詞を最後に置いてしまう誤りがあります。副詞の後は動詞が2番目です。"
+    },
+    {
+      "id": "lassen",
+      "cefr": "B1",
+      "titleDe": "lassen + Infinitiv",
+      "titleJa": "lassen + 不定詞",
+      "summaryJa": "lassen は、「〜させる、〜してもらう、〜させておく」という意味で、他の動詞の不定詞と使います。人に頼んで何かをしてもらうときに便利です。また sich lassen + 不定詞は「〜することができる」という受動的な意味にもなります。",
+      "points": [
+        {
+          "ja": "「してもらう」は、lassen + 不定詞で表します。",
+          "exampleDe": "Ich lasse mir die Haare schneiden.",
+          "exampleJa": "私は髪を切ってもらいます。"
+        },
+        {
+          "ja": "「させておく」「そのままにしておく」の意味もあります。",
+          "exampleDe": "Lass das Fenster bitte offen.",
+          "exampleJa": "窓は開けたままにしておいてください。"
+        },
+        {
+          "ja": "sich lassen + 不定詞は、「〜できる」という意味になります。",
+          "exampleDe": "Das Problem lässt sich leicht lösen.",
+          "exampleJa": "その問題は簡単に解決できます。"
+        }
+      ],
+      "pitfallJa": "日本語の「してもらう」「させる」「しておく」を、すべて machen や bekommen で表そうとしてしまうことがあります。lassen は完了形で lassen の不定詞形を使う点（Ich habe es reparieren lassen.）にも注意が必要です。"
+    },
+    {
+      "id": "futur",
+      "cefr": "B1",
+      "titleDe": "Futur I / Vermutung",
+      "titleJa": "未来形・推量",
+      "summaryJa": "未来形は werden + 不定詞で作ります。ただし未来のことは、現在形と時間を表す語（morgen など）で表すのがふつうです。werden + 不定詞は、むしろ「〜だろう」という推量や、意志を強調したいときによく使われます。",
+      "points": [
+        {
+          "ja": "未来の予定は、現在形で表すのがふつうです。",
+          "exampleDe": "Nächste Woche fahre ich nach Hamburg.",
+          "exampleJa": "来週ハンブルクに行きます。"
+        },
+        {
+          "ja": "werden + 不定詞は、現在の事柄についての推量にも使います。wohl や sicher がよく添えられます。",
+          "exampleDe": "Er wird jetzt wohl im Büro sein.",
+          "exampleJa": "彼は今ごろオフィスにいるでしょう。"
+        },
+        {
+          "ja": "強い決意や予測を表すときにも使います。",
+          "exampleDe": "Ich werde nie wieder so spät ins Bett gehen.",
+          "exampleJa": "もう二度とこんなに遅く寝ません。"
+        }
+      ],
+      "pitfallJa": "日本語には未来形がないため、逆に何でも werden で言おうとしてしまう人がいます。予定や計画は現在形で十分です。また、werden を「〜になる」の意味と混同しないようにしましょう。"
+    },
+    {
+      "id": "genitiv",
+      "cefr": "B1",
+      "titleDe": "Genitiv",
+      "titleJa": "2格（属格）",
+      "summaryJa": "2格は、所有や所属を表し、日本語の「〜の」にほぼ対応します。男性・中性の名詞は des + 名詞に -(e)s、女性・複数では der を使います。会話では von + 与格で代用することも多いですが、書き言葉や wegen などの前置詞では2格が使われます。",
+      "points": [
+        {
+          "ja": "男性・中性の名詞には -s または -es がつきます。",
+          "exampleDe": "Das ist das Auto meines Chefs.",
+          "exampleJa": "これは私の上司の車です。"
+        },
+        {
+          "ja": "女性・複数では、名詞は変わらず、冠詞が der になります。",
+          "exampleDe": "Die Hobbys der Kinder sind sehr unterschiedlich.",
+          "exampleJa": "子どもたちの趣味はそれぞれまったく違います。"
+        },
+        {
+          "ja": "wegen のように2格を取る前置詞もあります。",
+          "exampleDe": "Wegen des Wetters fällt das Fest aus.",
+          "exampleJa": "天気のせいで、お祭りは中止になります。"
+        }
+      ],
+      "pitfallJa": "日本語の「姉の友達」は「持ち主 → 持ち物」の順ですが、ドイツ語は der Freund meiner Schwester のように持ち物が先で、持ち主が2格で後ろに来ます。語順を逆にしがちなので注意しましょう。男性・中性名詞の -s の付け忘れも多い誤りです。"
+    },
+    {
+      "id": "passiv_erweitert",
+      "cefr": "B2",
+      "titleDe": "Passiv mit Modalverb, Zustandspassiv",
+      "titleJa": "話法の助動詞つき受動態・状態受動",
+      "summaryJa": "話法の助動詞と受動態を組み合わせるときは、過去分詞 + werden の不定詞を文末に置きます。状態受動は sein + 過去分詞で、動作の結果としての状態を表します。動作を表す werden-Passiv との違いが重要です。",
+      "points": [
+        {
+          "ja": "話法の助動詞 + 過去分詞 + werden の順で、文末に置きます。",
+          "exampleDe": "Die Formulare müssen bis Freitag ausgefüllt werden.",
+          "exampleJa": "書類は金曜日までに記入されなければなりません。"
+        },
+        {
+          "ja": "状態受動は、動作が終わった結果の状態を表します。",
+          "exampleDe": "Das Büro ist heute geschlossen.",
+          "exampleJa": "事務所は今日は閉まっています。"
+        },
+        {
+          "ja": "動作受動の werden と状態受動の sein の違いを区別します。",
+          "exampleDe": "Die Tür wird gerade geöffnet, aber vorhin war sie noch geschlossen.",
+          "exampleJa": "ドアはちょうど今開けられているところですが、さっきまでは閉まっていました。"
+        }
+      ],
+      "pitfallJa": "日本語では「閉まっている」「閉められる」「閉められた」の区別が曖昧になりがちですが、ドイツ語では動作（wird geschlossen）と状態（ist geschlossen）をはっきり使い分けます。また、動詞が最後に二つ重なる語順にも慣れが必要です。"
+    },
+    {
+      "id": "konjunktiv1",
+      "cefr": "B2",
+      "titleDe": "Konjunktiv I / indirekte Rede",
+      "titleJa": "接続法第1式・間接話法",
+      "summaryJa": "他人の発言を引用するとき、新聞やニュースなどの書き言葉では接続法第1式を使います。語幹に -e、-est、-e、-en、-et、-en をつけて作り、sein だけは seien のような特別な形です。第1式が直説法と同じ形になるときは、第2式で代用します。",
+      "points": [
+        {
+          "ja": "er/sie/es の形は語幹 + -e です。",
+          "exampleDe": "Der Minister sagte, er komme morgen nach Berlin.",
+          "exampleJa": "大臣は、明日ベルリンに来ると述べました。"
+        },
+        {
+          "ja": "sein は特別な形で、er sei と言います。",
+          "exampleDe": "Sie sagte, ihr Vater sei im Krankenhaus.",
+          "exampleJa": "彼女は、父親が入院していると言いました。"
+        },
+        {
+          "ja": "第1式が直説法と同じ形になる場合は、第2式を使います。",
+          "exampleDe": "Die Kollegen sagten, sie hätten keine Zeit.",
+          "exampleJa": "同僚たちは、時間がないと言いました。"
+        }
+      ],
+      "pitfallJa": "日本語は「と言いました」の前を普通形にするだけで間接話法になるため、動詞の形を変える必要性が実感しにくいです。ドイツ語では、直接話法の人称や時間表現の変更（heute → an diesem Tag など）も必要になります。"
+    },
+    {
+      "id": "partizipialattribut",
+      "cefr": "B2",
+      "titleDe": "Partizipialattribute",
+      "titleJa": "分詞による名詞修飾",
+      "summaryJa": "現在分詞（-end）や過去分詞を形容詞のように名詞の前に置いて、名詞を修飾することができます。関係文を短くまとめた形で、書き言葉によく見られます。語尾は通常の形容詞語尾と同じです。語順が日本語の連体修飾に近く、日本語話者には比較的理解しやすい面があります。",
+      "points": [
+        {
+          "ja": "現在分詞は、進行中や同時の動作を表します。",
+          "exampleDe": "Die wartenden Passagiere wurden ungeduldig.",
+          "exampleJa": "待っている乗客たちはいらいらし始めました。"
+        },
+        {
+          "ja": "過去分詞は、完了した動作や受け身の意味を表します。",
+          "exampleDe": "Das reparierte Fahrrad steht im Keller.",
+          "exampleJa": "修理された自転車は地下室にあります。"
+        },
+        {
+          "ja": "拡張した形では、修飾部分が冠詞と名詞の間に入ります。",
+          "exampleDe": "Der seit Jahren leer stehende Laden wird umgebaut.",
+          "exampleJa": "何年も空き店舗になっていたその店は改装されます。"
+        }
+      ],
+      "pitfallJa": "日本語の連体修飾（「何年も空いている店」）に似ているため、使うのは自然ですが、分詞の語尾の付け忘れや、現在分詞と過去分詞の意味の取り違えが多いです。また、zu + 現在分詞（der zu lösende Fall）は「〜されるべき」の意味になります。"
+    },
+    {
+      "id": "nominalstil",
+      "cefr": "B2",
+      "titleDe": "Nominalstil",
+      "titleJa": "名詞化表現",
+      "summaryJa": "動詞や副文の内容を名詞や前置詞句に置き換える書き方を名詞化表現と呼びます。公的な文書、ニュース、論文などでよく使われ、情報を短くまとめる効果があります。日本語の「〜すること」「〜の増加」に近い発想です。",
+      "points": [
+        {
+          "ja": "動詞を名詞化し、助動詞や機能動詞と組み合わせます。",
+          "exampleDe": "Die Stadt hat die Einführung neuer Regeln beschlossen.",
+          "exampleJa": "市は新しい規則の導入を決定しました。"
+        },
+        {
+          "ja": "副文を前置詞句に言い換えることができます。",
+          "exampleDe": "Bei Regen findet die Veranstaltung drinnen statt.",
+          "exampleJa": "雨の場合、イベントは屋内で行われます。"
+        },
+        {
+          "ja": "機能動詞句（zur Verfügung stellen など）は、名詞化表現の定番です。",
+          "exampleDe": "Die Firma stellt den Mitarbeitern einen Laptop zur Verfügung.",
+          "exampleJa": "会社は従業員にノートパソコンを支給します。"
+        }
+      ],
+      "pitfallJa": "日本語は名詞化表現が自然なので、日常会話でもつい名詞だらけの文を作りがちです。ドイツ語の会話では動詞を使った自然な言い方が好まれます。名詞の性・格・冠詞を落とさないことも大切です。"
+    },
+    {
+      "id": "zweiteilige_konnektoren",
+      "cefr": "B2",
+      "titleDe": "sowohl…als auch, je…desto, weder…noch, nicht nur…sondern auch",
+      "titleJa": "二つで一組の接続詞",
+      "summaryJa": "sowohl … als auch（〜も〜も）、weder … noch（〜も〜もない）、nicht nur … sondern auch（〜だけでなく〜も）、je … desto（〜ば〜ほど）などは、二つで一組になる接続詞です。je … desto の je の節は副文で、定動詞は文末に来ます。",
+      "points": [
+        {
+          "ja": "sowohl … als auch は、二つの要素を並べます。",
+          "exampleDe": "Sie spricht sowohl Englisch als auch Französisch.",
+          "exampleJa": "彼女は英語もフランス語も話します。"
+        },
+        {
+          "ja": "je + 比較級 の副文と、desto + 比較級 の主文の組み合わせです。",
+          "exampleDe": "Je mehr ich übe, desto besser spreche ich.",
+          "exampleJa": "練習すればするほど、上手に話せるようになります。"
+        },
+        {
+          "ja": "weder … noch は、すでに否定の意味を含むので、nicht は不要です。",
+          "exampleDe": "Er hat weder Zeit noch Lust, mitzukommen.",
+          "exampleJa": "彼には一緒に来る時間も気持ちもありません。"
+        }
+      ],
+      "pitfallJa": "日本語の「〜も〜も」「〜ば〜ほど」から直訳しやすいのですが、je … desto の後ろの主文は動詞が2番目になること、weder … noch で二重否定にしないことに注意しましょう。nicht nur の後の語順も要確認です。"
+    },
+    {
+      "id": "praep_genitiv",
+      "cefr": "B2",
+      "titleDe": "aufgrund, trotz, innerhalb, statt …",
+      "titleJa": "2格支配の前置詞",
+      "summaryJa": "aufgrund（〜のために）、trotz（〜にもかかわらず）、innerhalb（〜以内に）、außerhalb（〜の外で）、statt（〜の代わりに）、während（〜の間）などは2格を取る前置詞です。名詞化表現や公的な文書でよく使われます。会話では wegen や trotz などで与格が使われることもあります。",
+      "points": [
+        {
+          "ja": "aufgrund と wegen は、原因を表します。",
+          "exampleDe": "Aufgrund des Streiks fahren heute keine Züge.",
+          "exampleJa": "ストライキのため、今日は電車が走っていません。"
+        },
+        {
+          "ja": "trotz は譲歩、statt は代替を表します。",
+          "exampleDe": "Trotz der Kälte ging sie ohne Mütze aus dem Haus.",
+          "exampleJa": "寒いのに、彼女は帽子もかぶらずに家を出ました。"
+        },
+        {
+          "ja": "innerhalb は、期間や範囲の「以内」を表します。",
+          "exampleDe": "Bitte antworten Sie innerhalb einer Woche.",
+          "exampleJa": "1週間以内にご返信ください。"
+        }
+      ],
+      "pitfallJa": "日本語の「〜のために」「〜にもかかわらず」を前置詞に直すとき、前置詞が格を支配することを忘れがちです。男性・中性の名詞には -(e)s をつけることも忘れないようにしましょう。"
+    }
+  ]
+}

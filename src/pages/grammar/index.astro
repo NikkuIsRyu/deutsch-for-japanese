@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import { withBase } from '../../lib/paths.ts';
+import grammar from '../../data/grammar.json';
+import sentences from '../../data/sentences.json';
+
+const u = (p = '') => withBase(import.meta.env.BASE_URL, p);
+type Tag = {
+  id: string; cefr: string; titleDe: string; titleJa: string; summaryJa: string;
+  points: Array<{ ja: string; exampleDe: string; exampleJa: string }>; pitfallJa: string;
+};
+const tags = (grammar as { tags: Tag[] }).tags;
+const draft = (grammar as { status?: string }).status === 'draft';
+const counts: Record<string, number> = {};
+for (const s of (sentences as { items: Array<{ tags: string[] }> }).items ?? []) for (const t of s.tags) counts[t] = (counts[t] ?? 0) + 1;
+const groups = ['A2', 'B1', 'B2'].map((lv) => ({ lv, tags: tags.filter((t) => t.cefr === lv) })).filter((g) => g.tags.length > 0);
+---
+<Base title="文法ノート" active="grammar">
+  <h1>文法ノート</h1>
+  <p class="lead">日本語話者がつまずきやすいポイントを中心にまとめました。</p>
+  {draft && <div class="notice">確認中の下書きです。日本語のネイティブチェックが終わるまで、内容が変わることがあります。</div>}
+
+  {groups.map((g) => (
+    <section aria-labelledby={`lv-${g.lv}`}>
+      <h2 id={`lv-${g.lv}`}><span class="badge">{g.lv}</span></h2>
+      <nav class="toc" aria-label={`${g.lv}の文法`}>
+        {g.tags.map((t) => <a href={`#${t.id}`}><span lang="de">{t.titleDe}</span></a>)}
+      </nav>
+      {g.tags.map((t) => (
+        <article class="card gram" id={t.id}>
+          <h3>{t.titleJa}　<span class="muted small" lang="de">{t.titleDe}</span></h3>
+          <p>{t.summaryJa}</p>
+          {t.points.length > 0 && (
+            <ul class="points">
+              {t.points.map((p) => (
+                <li>
+                  {p.ja}
+                  {p.exampleDe && (
+                    <span class="ex"><span lang="de">{p.exampleDe}</span><br />{p.exampleJa}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+          {t.pitfallJa && <p class="pitfall"><strong>つまずきやすい点：</strong>{t.pitfallJa}</p>}
+          <div class="actions"><a class="btn small" href={`${u('browse/')}?tag=${encodeURIComponent(t.id)}`}>この文法の例文{counts[t.id] ? `（${counts[t.id]}）` : ''}</a></div>
+        </article>
+      ))}
+    </section>
+  ))}
+  {groups.length === 0 && <p class="muted">まだ文法ノートがありません。</p>}
+</Base>
